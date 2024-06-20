@@ -31,3 +31,16 @@ GymPass style app.
 - [ ] Os dados da aplicação estarão salvos em um banco postgreSQL;
 - [ ] Todas listas de dados precisam estar paginadas com 20 items por página;
 - [ ] O usuário deve ser identificado por um JWT;
+
+
+## SOLID
+
+- Dependency Inversion Principle
+
+- I
+
+- L
+
+- O
+
+- S
