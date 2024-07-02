@@ -18,6 +18,7 @@ model User {
   name         String
   email        String   @unique
   passwordHash String   @map("password_hash")
+  role         Role     @default(MEMBER)
   createdAt    DateTime @default(now()) @map("created_at")
 
   checkIns CheckIn[]
@@ -49,4 +50,9 @@ model Gym {
   checkIns CheckIn[]
 
   @@map("gyms")
+}
+
+enum Role {
+  MEMBER
+  ADMIN
 }

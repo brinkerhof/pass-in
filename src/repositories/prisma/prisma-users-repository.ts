@@ -11,4 +11,8 @@ export const prismaUsersRepository: UsersRepository = {
     const user = await prisma.user.findUnique({ where: { email } });
     return user;
   },
+  async findById(id: string) {
+    const user = await prisma.user.findUnique({ where: { id } });
+    return user;
+  },
 };
